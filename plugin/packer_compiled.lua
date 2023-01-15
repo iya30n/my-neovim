@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/yasin/.local/share/nvim/site/pack/packer/start/neodev.nvim",
     url = "https://github.com/folke/neodev.nvim"
   },
+  ["neovim-ayu"] = {
+    loaded = true,
+    path = "/Users/yasin/.local/share/nvim/site/pack/packer/start/neovim-ayu",
+    url = "https://github.com/Shatur/neovim-ayu"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/yasin/.local/share/nvim/site/pack/packer/start/nvim-cmp",

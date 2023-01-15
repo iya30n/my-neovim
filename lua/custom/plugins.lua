@@ -1,5 +1,6 @@
 return function(use)
   use 'folke/tokyonight.nvim'
+  use 'Shatur/neovim-ayu'
   use({
     "lukas-reineke/indent-blankline.nvim",
       config = function()
