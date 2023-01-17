@@ -17,3 +17,11 @@ require('lualine').setup {
 	  section_separators = '',
 	},
   }
+
+
+require("indent_blankline").setup {
+    char = "",
+    space_char_blankline = " ",
+}
+
+require("autoclose").setup({})
