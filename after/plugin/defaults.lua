@@ -1,5 +1,6 @@
 local options = { noremap = true }
 vim.keymap.set("i", "kj", "<Esc>", options)
+vim.keymap.set("n", ";w", ":w<CR>")
 
 vim.bo.tabstop = 4
 vim.bo.shiftwidth = 4
