@@ -2,6 +2,8 @@ local options = { noremap = true }
 vim.keymap.set("i", "kj", "<Esc>", options)
 vim.keymap.set("n", ";w", ":w<CR>")
 
+vim.keymap.set("n", "<leader>f", ":Format<CR>")
+
 vim.bo.tabstop = 4
 vim.bo.shiftwidth = 4
 vim.expandtab = true
