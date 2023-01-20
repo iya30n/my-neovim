@@ -15,7 +15,7 @@ vim.cmd [[colorscheme ayu-mirage]]
 require('lualine').setup {
 	options = {
 	  icons_enabled = false,
-	  theme = 'ayu-mirage',
+	  theme = 'auto',
 	  component_separators = '|',
 	  section_separators = '',
 	},
