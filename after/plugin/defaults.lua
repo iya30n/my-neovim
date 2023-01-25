@@ -1,6 +1,7 @@
 local options = { noremap = true }
 vim.keymap.set("i", "kj", "<Esc>", options)
 vim.keymap.set("n", ";w", ":w<CR>")
+vim.keymap.set("n", ";q", ":wq<CR>")
 
 vim.keymap.set("n", "<leader>f", ":Format<CR>")
 
