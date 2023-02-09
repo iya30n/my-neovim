@@ -10,7 +10,7 @@ vim.expandtab = true
 vim.bo.softtabstop = 4
 
 vim.o.termguicolors = true
-vim.cmd [[colorscheme ayu-mirage]]
+vim.cmd [[colorscheme github_dark]]
 
 require('lualine').setup {
 	options = {
