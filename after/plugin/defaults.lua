@@ -40,10 +40,7 @@ vim.g.loaded_netrwPlugin = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
--- empty setup using defaults
-require("nvim-tree").setup()
-
--- OR setup with some options
+-- START nvim-tree --
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
@@ -61,6 +58,16 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
-
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 vim.keymap.set("n", "<leader>E", ":NvimTreeFocus<CR>")
+
+-- END nvim-tree --
+
+-- START gotidy command --
+function go_mod_tidy()
+  vim.cmd([[ ! go mod tidy ]])
+  vim.cmd([[ LspRestart ]])
+end
+
+vim.api.nvim_create_user_command("GoTidy", go_mod_tidy, {})
+-- END gotidy command --
