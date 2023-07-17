@@ -5,11 +5,6 @@ vim.keymap.set("n", ";q", ":wq<CR>")
 
 vim.keymap.set("n", "<leader>f", ":Format<CR>")
 
-vim.bo.tabstop = 4
-vim.bo.shiftwidth = 4
-vim.expandtab = true
-vim.bo.softtabstop = 4
-
 vim.o.termguicolors = true
 vim.cmd [[colorscheme github_dark]]
 
