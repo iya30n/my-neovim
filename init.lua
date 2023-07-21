@@ -427,17 +427,26 @@ cmp.setup {
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
--- vim.bo.tabstop = 4
--- vim.bo.shiftwidth = 4
--- vim.expandtab = true
--- vim.bo.softtabstop = 4
+local vimopt = vim.opt
+-- tabs & indentation
+vimopt.tabstop = 4
+vimopt.shiftwidth = 4
+vimopt.expandtab = true
+vimopt.autoindent = true
 
--- set tab to 4 spaces
--- vim.cmd("set tabstop=4")
--- vim.cmd("set shiftwidth=4")
--- vim.cmd("set expandtab")
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.autoindent = true
-vim.opt.wrap = false;
+-- line wrapping
+vimopt.wrap = false;
+
+-- search settings
+vimopt.ignorecase = true
+vimopt.smartcase = true
+
+-- clipboard
+vimopt.clipboard:append("unnamedplus")
+
+-- split windows
+vimopt.splitright = true;
+vimopt.splitbelow = true;
+
+-- dash (-) is a part of work (hello-world)
+vimopt.iskeyword:append("-")
