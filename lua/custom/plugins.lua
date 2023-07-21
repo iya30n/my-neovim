@@ -1,7 +1,7 @@
 return function(use)
   -- themes
   use 'Shatur/neovim-ayu'
-  use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- auto close
   use 'm4xshen/autoclose.nvim'
@@ -14,4 +14,6 @@ return function(use)
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
+
+  use 'christoomey/vim-tmux-navigator'
 end
