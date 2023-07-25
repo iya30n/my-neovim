@@ -1,7 +1,7 @@
 local options = { noremap = true }
 
 vim.o.termguicolors = true
-vim.cmd [[colorscheme github_dark]]
+vim.cmd [[colorscheme everforest]]
 
 require('lualine').setup {
 	options = {
