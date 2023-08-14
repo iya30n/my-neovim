@@ -48,8 +48,10 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
-vim.keymap.set("n", "<leader>E", ":NvimTreeFocus<CR>")
+-- vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<CR>")
+-- vim.keymap.set("n", "<leader>E", ":NvimTreeFocus<CR>")
+vim.keymap.set("n", "<leader>E", ":NvimTreeFindFile<CR>")
 
 -- END nvim-tree --
 
