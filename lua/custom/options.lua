@@ -23,3 +23,6 @@ vimopt.splitbelow = true;
 -- dash (-) is a part of work (hello-world)
 vimopt.iskeyword:append("-")
 
+vim.api.nvim_create_autocmd('BufWritePost', {
+  command = 'LspRestart',
+})
