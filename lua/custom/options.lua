@@ -24,5 +24,5 @@ vimopt.splitbelow = true;
 vimopt.iskeyword:append("-")
 
 vim.api.nvim_create_autocmd('BufWritePost', {
-  command = 'LspRestart',
+  command = 'LspRestart gopls',
 })
