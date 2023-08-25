@@ -1,7 +1,7 @@
 local options = { noremap = true }
 
 vim.o.termguicolors = true
-vim.cmd [[colorscheme everforest]]
+vim.cmd [[colorscheme vscode]]
 
 require('lualine').setup {
 	options = {
